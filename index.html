@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xi Yu • Viola — Portfolio</title>
+  <meta name="description" content="Xi Yu (Viola) — selected photos, video, and bio." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>.chip[aria-pressed="true"]{ background:#0f172a; color:#fff; }</style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-900">
+  <!-- NAV -->
+  <nav class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="font-semibold tracking-wide">Xi Yu • Viola</div>
+      <div class="flex items-center gap-3 text-sm">
+        <a href="#work" class="hover:underline">Work</a>
+        <a href="#bio" class="hover:underline">Bio</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="XIYUResumefinal.docx" class="px-3 py-1.5 rounded-xl bg-slate-900 text-white">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-3 gap-8 items-center">
+    <div class="md:col-span-2">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">Xi Yu
+        <span class="block text-xl md:text-2xl mt-3 font-medium text-slate-600">Viola • Chamber & Orchestral</span>
+      </h1>
+      <p class="mt-5 text-slate-700 max-w-2xl">Violist at the Peabody Institute. Passionate about how spaces shape the viola’s timbre; active in orchestral and chamber repertoire and cross‑media collaboration.</p>
+      <div class="mt-6 flex flex-wrap gap-2 text-slate-600 text-sm">
+        <span class="px-2 py-1 rounded-lg bg-slate-100">Baroque to Contemporary</span>
+        <span class="px-2 py-1 rounded-lg bg-slate-100">Orchestra & Chamber</span>
+        <span class="px-2 py-1 rounded-lg bg-slate-100">Recording & Touring</span>
+      </div>
+    </div>
+    <div class="rounded-2xl overflow-hidden shadow-xl">
+      <!-- Headshot (URL-escaped space as %20) -->
+      <img src="IMG_7189%202.JPG" alt="Headshot" class="w-full h-full object-cover"/>
+    </div>
+  </header>
+
+  <!-- WORK -->
+  <section id="work" class="max-w-6xl mx-auto px-4 pb-8">
+    <div class="flex items-center justify-between">
+      <h2 class="text-2xl font-semibold">Selected Work</h2>
+      <div class="hidden sm:flex gap-2">
+        <button class="chip px-3 py-1.5 rounded-xl bg-slate-100" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip px-3 py-1.5 rounded-xl bg-slate-100" data-filter="photo">Photos</button>
+        <button class="chip px-3 py-1.5 rounded-xl bg-slate-100" data-filter="video">Videos</button>
+        <button class="chip px-3 py-1.5 rounded-xl bg-slate-100" data-filter="writing">Writing</button>
+      </div>
+    </div>
+    <div class="mt-3 max-w-sm">
+      <input id="q" class="w-full border rounded-xl px-3 py-2" placeholder="Search title / tags…" />
+    </div>
+
+    <div id="grid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- PHOTO: Quartet -->
+      <article class="card rounded-2xl shadow-sm bg-white" data-type="photo" data-tags="performance chamber" data-title="Chamber Music Competition • String Quartet">
+        <div class="aspect-video overflow-hidden rounded-t-2xl">
+          <img src="IMG_5532%202.JPG" alt="Chamber competition" class="w-full h-full object-cover"/>
+        </div>
+        <div class="p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 class="font-medium">Chamber Music Competition • String Quartet</h3>
+              <p class="text-sm text-slate-600">中国音乐学院——室内乐比赛（弦乐四重奏组）</p>
+            </div>
+            <span class="text-xs border rounded-lg px-2 py-0.5">2021</span>
+          </div>
+          <div class="mt-3 flex gap-2 text-xs text-slate-600"><span class="px-2 py-1 bg-slate-100 rounded">performance</span><span class="px-2 py-1 bg-slate-100 rounded">chamber</span></div>
+          <div class="mt-4">
+            <a class="text-sm underline" href="IMG_5532%202.JPG" target="_blank">Open</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PHOTO: Orchestra -->
+      <article class="card rounded-2xl shadow-sm bg-white" data-type="photo" data-tags="orchestra performance" data-title="Orchestral Concert • Curtain Call">
+        <div class="aspect-video overflow-hidden rounded-t-2xl">
+          <img src="IMG_0580%202.JPG" alt="Orchestra curtain call" class="w-full h-full object-cover"/>
+        </div>
+        <div class="p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 class="font-medium">Orchestral Concert • Curtain Call</h3>
+              <p class="text-sm text-slate-600">交响音乐会谢幕</p>
+            </div>
+            <span class="text-xs border rounded-lg px-2 py-0.5">2023</span>
+          </div>
+          <div class="mt-3 flex gap-2 text-xs text-slate-600"><span class="px-2 py-1 bg-slate-100 rounded">orchestra</span><span class="px-2 py-1 bg-slate-100 rounded">performance</span></div>
+          <div class="mt-4">
+            <a class="text-sm underline" href="IMG_0580%202.JPG" target="_blank">Open</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- VIDEO: Google Drive embed (preview) -->
+      <article class="card rounded-2xl shadow-sm bg-white" data-type="video" data-tags="solo baroque" data-title="J.S. Bach — Adagio (BWV 1001)">
+        <div class="aspect-video overflow-hidden rounded-t-2xl">
+          <!-- Use Drive preview to play in-page -->
+          <iframe src="https://drive.google.com/file/d/1rUK3_9DChi0_1zlzIU2_SmTF1Qp22PEf/preview" allow="autoplay" class="w-full h-full"></iframe>
+        </div>
+        <div class="p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 class="font-medium">J.S. Bach — Adagio (BWV 1001)</h3>
+              <p class="text-sm text-slate-600">Google Drive embedded video</p>
+            </div>
+            <span class="text-xs border rounded-lg px-2 py-0.5">2024</span>
+          </div>
+          <div class="mt-3 flex gap-2 text-xs text-slate-600"><span class="px-2 py-1 bg-slate-100 rounded">solo</span><span class="px-2 py-1 bg-slate-100 rounded">baroque</span></div>
+          <div class="mt-4 flex gap-3">
+            <a class="px-3 py-1.5 rounded-xl bg-slate-100 text-sm" target="_blank" href="https://drive.google.com/file/d/1rUK3_9DChi0_1zlzIU2_SmTF1Qp22PEf/view?usp=sharing">Open on Drive</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- WRITING: Bio -->
+      <article class="card rounded-2xl shadow-sm bg-white" data-type="writing" data-tags="writing bio" data-title="Artist Bio (DOCX)">
+        <div class="p-6 text-center text-sm">Artist Bio</div>
+        <div class="p-4 pt-0">
+          <div class="flex items-start justify-between">
+            <div><h3 class="font-medium">Artist Bio (DOCX)</h3></div>
+            <span class="text-xs border rounded-lg px-2 py-0.5">2025</span>
+          </div>
+          <div class="mt-4"><a class="px-3 py-1.5 rounded-xl bg-slate-100 text-sm" href="bio.docx">Download</a></div>
+        </div>
+      </article>
+
+      <!-- WRITING: Resume -->
+      <article class="card rounded-2xl shadow-sm bg-white" data-type="writing" data-tags="writing resume" data-title="Resume (DOCX)">
+        <div class="p-6 text-center text-sm">Resume</div>
+        <div class="p-4 pt-0">
+          <div class="flex items-start justify-between">
+            <div><h3 class="font-medium">Resume (DOCX)</h3></div>
+            <span class="text-xs border rounded-lg px-2 py-0.5">2025</span>
+          </div>
+          <div class="mt-4"><a class="px-3 py-1.5 rounded-xl bg-slate-100 text-sm" href="XIYUResumefinal.docx">Download</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section id="bio" class="bg-white border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-10">
+      <div>
+        <h2 class="text-2xl font-semibold">About</h2>
+        <p class="mt-2 text-slate-600">EN / 中文</p>
+      </div>
+      <div class="md:col-span-2 space-y-4 text-[15px] leading-7 text-slate-700">
+        <p>Xi Yu earned a Bachelor of Music in Viola Performance from the China Conservatory of Music (2025) and is pursuing the Master of Music at the Peabody Institute. Orchestral work includes China Youth Philharmonic and China Conservatory Symphony Orchestra.</p>
+        <p><span class="font-medium">中文简介：</span>余茜，中提琴演奏者，现为约翰斯·霍普金斯大学皮博迪学院硕士生，先后师从曹海、Born Lau 与张中金。曾任中国青年爱乐乐团中提琴声部副首席，并随中国东方演艺集团（2022）及中国音院交响乐团（2025）全国巡演。获香港国际弦乐比赛一等奖（2016）与蜂鸟音乐大赛三等奖（2023）。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold">Contact</h2>
+    <div class="mt-4 grid md:grid-cols-3 gap-6 text-slate-700">
+      <div>Email: <a class="underline" href="mailto:xiyuviola@163.com">xiyuviola@163.com</a></div>
+      <div>Phone: +1 (410) 900-7093</div>
+      <div>Location: Baltimore, MD</div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-slate-500">© <span id="year"></span> Xi Yu — Viola</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const chips = Array.from(document.querySelectorAll('.chip'));
+    const cards = Array.from(document.querySelectorAll('.card'));
+    const q = document.getElementById('q');
+    function applyFilters(){
+      const active = chips.find(c=>c.getAttribute('aria-pressed')==='true')?.dataset.filter || 'all';
+      const query = (q.value || '').toLowerCase();
+      cards.forEach(card => {
+        const type = card.dataset.type;
+        const hay = (card.dataset.title + ' ' + card.dataset.tags).toLowerCase();
+        const typeOk = active === 'all' || type === active;
+        const textOk = !query || hay.includes(query);
+        card.style.display = (typeOk && textOk) ? '' : 'none';
+      });
+    }
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c=>c.setAttribute('aria-pressed','false'));
+        chip.setAttribute('aria-pressed','true');
+        applyFilters();
+      });
+    });
+    q.addEventListener('input', applyFilters);
+  </script>
+</body>
+</html>
